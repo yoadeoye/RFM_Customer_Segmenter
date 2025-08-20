@@ -48,8 +48,8 @@ def assign_rfm_value_segments(data):
 def assign_rfm_customer_segments(data):
     """Assign customer segments based on RFM Score thresholds."""
     data['RFM Customer Segments'] = ''
-    data.loc[data['RFM Score'] >= 9, 'RFM Customer Segments'] = 'Champions'
-    data.loc[(data['RFM Score'] >= 6) & (data['RFM Score'] < 9), 'RFM Customer Segments'] = 'Potential Loyalists'
+    data.loc[data['RFM Score'] >= 10, 'RFM Customer Segments'] = 'Champions'
+    data.loc[(data['RFM Score'] >= 6) & (data['RFM Score'] < 10), 'RFM Customer Segments'] = 'Potential Loyalists'
     data.loc[(data['RFM Score'] >= 5) & (data['RFM Score'] < 6), 'RFM Customer Segments'] = 'At Risk Customers'
     data.loc[(data['RFM Score'] >= 4) & (data['RFM Score'] < 5), 'RFM Customer Segments'] = 'Cannot Lose'
     data.loc[data['RFM Score'] < 4, 'RFM Customer Segments'] = 'Lost'
