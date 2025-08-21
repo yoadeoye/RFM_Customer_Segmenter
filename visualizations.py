@@ -38,7 +38,7 @@ def create_elbow_fig(data):
 
 def create_bubble_chart_fig(data):
     """Create bubble chart for RFM segments by value."""
-    customer_segment_counts = data.groupby(['rfmValueSegment', 'RFM Customer Segments']).size().reset_index(name='Count')
+    customer_segment_counts = data.groupby(['rfmValueSegment', 'RFM Customer Segments'],observed=True).size().reset_index(name='Count')
     customer_segment_counts = customer_segment_counts.sort_values('Count', ascending=False)
     fig = px.scatter(
         customer_segment_counts,
