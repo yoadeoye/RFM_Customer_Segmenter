@@ -33,9 +33,10 @@ The codebase is organized into the following files:
 #### **Setup**
 ---
 Prerequisites
-+ Python 3.7+: Ensure you have Python installed.
-+ You can download it from [python.org](https://www.python.org/downloads/).
++ Python 3.7+ 
++ Ensure you have Python installed. You can download it from [python.org](https://www.python.org/downloads/).
 + Git: Required to clone the repository. Install it from [git-scm.com](https://git-scm.com/).
+  
 #### **Installation Steps**
 1. **Clone the Repository**
    ```bash
