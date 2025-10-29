@@ -66,6 +66,7 @@ The customer data is loaded from a CSV file hosted on GitHub:
   
 > [!NOTE]
 > For local development, you can download the CSV and update the ***load_data()*** function in ***data_processing.py*** to load it from a local path.
+>  If you are interested in a detailed article about the methodology used, it is here [Medium](https://medium.com/@yusufadigun17968/rfm-analysis-in-python-the-strategy-that-boosted-e-commerce-retention-and-sales-by-5-27d83c39e6aa/) and a [short video](https://go.screenpal.com/watch/cT622OnbYpc/) of the project is here 
 
 ---
 
